@@ -73,7 +73,7 @@ def contact(request):
     """
     # позже здесь будет код для статистики заходов на эту страницу
     # и для записи фидбека
-    folium_map = folium.Map(location=COMPANY_COORDINATES, zoom_start=12)
+    folium_map = folium.Map(location=COMPANY_COORDINATES, zoom_start=15)
     folium.Marker(
         COMPANY_COORDINATES,
         tooltip="Мы здесь",
