@@ -31,7 +31,7 @@
           <div class="flex-fill" style="margin-right: 30px;">
             <div class="card blog__slide text-center">
               <div class="blog__slide__img">
-                <img class="card-img rounded-0" src="{{ post.image_url }}" alt="">
+                <img class="card-img rounded-0" src="{{ post.image_url }}" alt="картинка поста">
               </div>
               <div class="blog__slide__content">
                 <h3><a href={% url 'index' %}>{{ post.title }}</a></h3>
@@ -54,9 +54,9 @@
             <div class="single-recent-blog-post">
               <div class="thumb">
                 {% if f_post.image_url %}
-                  <img class="img-fluid" src="{{ f_post.image_url }}" alt="">
+                  <img class="img-fluid" src="{{ f_post.image_url }}" alt="картинка поста">
                 {% else %}
-                  <img class="img-fluid" src="{% static "img/banner/blog.png" %}" alt="">
+                  <img class="img-fluid" src="{% static "img/banner/blog.png" %}" alt="баннер блога">
                 {% endif %}
                 <ul style="max-width: 550px" class="thumb-info">
                   <li><a href="#"><i class="ti-user"></i>{{ f_post.author }}</a></li>
